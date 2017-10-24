@@ -1,0 +1,19 @@
+{
+  "name": "ionic2-hotel-server",
+  "version": "1.0.0",
+  "description": "A App with Ionic 2 Client and Express Server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Niccol",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "mongoose": "^4.12.4",
+    "morgan": "^1.9.0"
+  }
+}

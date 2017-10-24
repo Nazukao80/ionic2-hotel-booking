@@ -29,7 +29,8 @@ plugins/android.json
 plugins/ios.json
 www/
 $RECYCLE.BIN/
-
+# server
+ionic2-hotel-server/node_modules
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate

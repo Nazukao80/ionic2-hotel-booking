@@ -6,25 +6,38 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { RoomsProvider } from '../providers/rooms/rooms';
+import { SearchPage } from '../pages/search/search';
+import { BookingPage } from '../pages/booking/booking';
+import { AvailableRoomsPage } from '../pages/available-rooms/available-rooms';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    AvailableRoomsPage,
+    BookingPage,
+    SearchPage
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    AvailableRoomsPage,
+    BookingPage,
+    SearchPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    RoomsProvider
   ]
 })
 export class AppModule {}
